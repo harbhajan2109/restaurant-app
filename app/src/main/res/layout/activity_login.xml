@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"/>
+
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:layout_marginEnd="24dp"
+        android:textSize="20sp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:background="@drawable/stroke_box"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#000"
+        android:layout_below="@+id/imgLogo" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/prompt_password"
+        android:background="@drawable/stroke_box"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:textColor="#000"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:layout_below="@+id/etUsername" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:layout_below="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:text="Forgot Password?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp" />
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>

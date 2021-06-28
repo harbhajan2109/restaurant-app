@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsDialogBox">
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        app:cardCornerRadius="30dp"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imgLocation"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_loctaion_dialog"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/txtDeliveryMart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="DELIVERY MART"
+            android:textSize="22sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imgLocation"/>
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#3/148,Mylavaram-516439 Kadapa"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:layout_below="@+id/txtDeliveryMart"/>
+            <TextView
+                android:id="@+id/txtAddressDist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dist(A.P)"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtAddress"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/txtPhn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 9059484841"
+                android:textSize="18sp"
+                android:layout_below="@id/txtAddressDist"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@drawable/ic_mobile"/>
+            <TextView
+                android:id="@+id/txtPhn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 9603894841"
+                android:textSize="18sp"
+                android:layout_below="@id/txtPhn1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@drawable/ic_mobile"/>
+            <TextView
+                android:id="@+id/txtWhatsApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connect with us"
+                android:textSize="18sp"
+                android:layout_below="@id/txtPhn2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@drawable/whatsapp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReportFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="6">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ede7f6">
+                <TextView
+                    android:id="@+id/txtIssue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1a237e"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Report your Issue here"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.5">
+                <EditText
+                    android:id="@+id/etReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:hint="write here!"
+                    android:inputType="textMultiLine"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:maxLines="70"/>
+                    
+            </ScrollView>
+            
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/card"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/card"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

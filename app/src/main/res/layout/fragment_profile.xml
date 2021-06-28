@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imgBurgerProfile"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile_sandwich"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfilePic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_profile"
+        android:layout_marginTop="20dp"
+        app:civ_border_width="2dp"
+        android:layout_below="@+id/imgBurgerProfile"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/txtNameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/imgProfilePic"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/txtHandleProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Handle"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/txtNameProfile"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/txtMobileProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:layout_below="@+id/txtHandleProfile"
+        android:textSize="18sp"
+        android:maxLength="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/txtDescriptionProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/txtMobileProfile"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"/>
+    <Button
+        android:id="@+id/btnSaveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="85dp"
+        android:layout_below="@+id/txtDescriptionProfile"
+        android:text="Save Profile"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

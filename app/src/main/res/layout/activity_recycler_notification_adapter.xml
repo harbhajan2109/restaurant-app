@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="430dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="14"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:background="#e8eaf6">
+            <ImageView
+                android:id="@+id/imgClockOrder"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/ic_order_recycler"
+                android:rotationY="180"/>
+            <RelativeLayout
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtOrderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Order Id: #21"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:padding="3dp"/>
+                <TextView
+                    android:id="@+id/txtId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Id:"
+                    android:layout_marginTop="70dp"
+                    android:layout_below="@+id/txtOrderId"
+                    android:padding="3dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="6"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgProductImage"
+                android:layout_weight="1.2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher"
+                />
+            <RelativeLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:padding="3dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#1a237e"
+                    android:text="Product Name"/>
+                <TextView
+                    android:id="@+id/txtRestaurantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_below="@+id/txtProductName"
+                    android:padding="3dp"
+                    android:textColor="#5c6bc0"
+                    android:text="Restaurant Name"/>
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/txtRestaurantName"
+                    android:padding="3dp"
+                    android:textColor="#5c6bc0"
+                    android:text="Quantity: 1.0"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_weight="1.8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="15.00"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#1a237e"
+                    android:drawableRight="@drawable/rupee"/>
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#5c6bc0"
+                    android:text="04.08"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#e8eaf6"
+            android:layout_weight="6.3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Customer"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/txtCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"
+                android:textColor="#1a237e"
+                android:padding="3dp"
+                android:text="Name"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/txtCustomerAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#1a237e"
+                android:padding="3dp"
+                android:maxLines="2"
+                android:text="Address"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/txtCustomerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:padding="3dp"
+                android:textColor="#1a237e"
+                android:text="mobile"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.7">
+            <TextView
+                android:id="@+id/txtWaitingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentLeft="true"
+                android:text="Waiting time"/>
+            <EditText
+                android:id="@+id/etTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:inputType="time"
+                android:hint="time(hrs:min:sec) "
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/stroke_box"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_timew"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/txtWaitingTime"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                />
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/etTime"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="Send"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

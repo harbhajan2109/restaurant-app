@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <ImageView
+                android:id="@+id/imgDish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_tick"
+                android:layout_margin="5dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Product"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtRestaurantName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="restaurant"
+                    android:textSize="15sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#808080"/>
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="quantity"
+                    android:textSize="15sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#808080"/>
+                <TextView
+                    android:id="@+id/txtProductId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+
+                    android:textSize="1sp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#808080"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.7">
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#000"
+                    android:drawableRight="@drawable/rupee"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:35"
+                    android:textSize="15sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#808080"
+                    android:textStyle="normal"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

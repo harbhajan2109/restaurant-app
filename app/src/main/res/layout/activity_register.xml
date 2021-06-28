@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_register"
+    tools:context=".RegisterActivity">
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Here"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:background="#fff"
+        android:inputType="textPersonName"
+        android:hint="Name(min. three characters)"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:minLines="1"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_below="@+id/txtRegister"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:textSize="18sp"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:drawableLeft="@drawable/ic_email"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_below="@+id/etName"/>
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:textSize="18sp"
+        android:inputType="phone"
+        android:hint="Mobile Number(10 digits)"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_mobile"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_below="@+id/etEmail"/>
+    <EditText
+        android:id="@+id/etDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:textSize="18sp"
+        android:inputType="textPostalAddress"
+        android:hint="Delivery Address"
+        android:drawableLeft="@drawable/ic_address"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_below="@+id/etMobileNumber"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_password"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_below="@+id/etDelivery"/>
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:drawableLeft="@drawable/ic_password"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_below="@+id/etPassword"/>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#006064"
+        android:textColor="#fff"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_below="@+id/etConfirmPassword"/>
+
+
+
+
+
+
+</RelativeLayout>

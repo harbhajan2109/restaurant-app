@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/black_panther"
+            android:layout_margin="15dp"/>
+        <LinearLayout
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@id/txtProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Product Name"
+                android:textStyle="bold"
+                android:padding="3dp"/>
+            <TextView
+                android:id="@+id/txtProductCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="#5c6bc0"
+                android:textSize="18sp"
+                android:padding="3dp"
+                android:layout_marginTop="2dp"/>
+            <TextView
+                android:id="@+id/txtProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost: 25"
+                android:drawableRight="@drawable/rupee"
+                android:textColor="#5c6bc0"
+                android:textSize="18sp"
+                android:padding="3dp"
+                android:layout_marginTop="2dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#1a237e"
+                    android:text="Status"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:padding="1dp"/>
+                <CheckBox
+                    android:id="@+id/checkboxAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5c6bc0"
+                    android:layout_below="@id/txtStatus"
+                    android:text="available"/>
+                <CheckBox
+                    android:id="@+id/checkboxUnavailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5c6bc0"
+                    android:text="unavailable"
+                    android:layout_below="@id/txtStatus"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/checkboxAvailable"/>
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkboxAvailable"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:text="Update"
+                    android:background="@color/colorPrimary"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txtProductId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:drawableRight="@drawable/ic_money"
+                android:textColor="#5c6bc0"
+                android:textSize="1sp"
+                android:padding="3dp"
+                android:layout_marginTop="40dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

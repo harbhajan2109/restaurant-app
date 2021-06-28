@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MoneyFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtMoneySection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:text="Money Section"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txtTodayCollection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1a237e"
+                android:textSize="20sp"
+                android:text="Today's Collection:"
+                android:textStyle="normal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/txtMoneySection"/>
+            <TextView
+                android:id="@+id/txtTodayFund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1a237e"
+                android:textSize="20sp"
+                android:text="0"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/rupee"
+                android:layout_below="@+id/txtTodayCollection"/>
+            <TextView
+                android:id="@+id/txtTotalCollection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1a237e"
+                android:textSize="20sp"
+                android:text="Today's Collection:"
+                android:textStyle="normal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/txtTodayFund"/>
+            <TextView
+                android:id="@+id/txtTotalFund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1a237e"
+                android:textSize="20sp"
+                android:text="0"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/rupee"
+                android:layout_below="@+id/txtTotalCollection"/>
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

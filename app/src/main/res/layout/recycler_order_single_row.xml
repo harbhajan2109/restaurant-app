@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="20dp">
+        
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:background="#e8eaf6">
+            <ImageView
+                android:id="@+id/imgClockOrder"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_order_recycler"
+                android:rotationY="180"/>
+            <RelativeLayout
+                android:layout_weight="4.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtOrderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Order Id: #21"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:padding="3dp"/>
+                <TextView
+                    android:id="@+id/txtCustomerAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5c6bc0"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:layout_below="@+id/txtOrderId"
+                    android:text="address of customer"/>
+                <TextView
+                    android:id="@+id/txtCustomerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5c6bc0"
+                    android:textSize="1sp"
+                    android:padding="3dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@+id/txtCustomerAddress"
+                    android:text="Customer Name" />
+                <TextView
+                    android:id="@+id/txtCustomerMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5c6bc0"
+                    android:textSize="1sp"
+                    android:padding="3dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/txtCustomerName"
+                    android:text="Customer Name" />
+                <TextView
+                    android:id="@+id/txtOid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5c6bc0"
+                    android:textSize="1sp"
+                    android:padding="3dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/txtCustomerMobile"
+                    android:text="Customer Name" />
+                <TextView
+                    android:id="@+id/txtBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="1sp"
+                    android:text="15.00"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#1a237e"
+                    android:layout_below="@id/txtCustomerMobile"/>
+                <TextView
+                    android:id="@+id/txtItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="1sp"
+                    android:text="15.00"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#1a237e"
+                    android:layout_below="@id/txtBill"/>
+
+
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/imgArrow"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_arrow_left"/>
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

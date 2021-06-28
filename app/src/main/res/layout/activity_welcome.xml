@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:id="@+id/txtDm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:text="RESTAURANT"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgLogo"
+        android:padding="8dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/txtTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:text="You Order WE Deliver"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtDm"
+        android:padding="8dp"/>
+
+
+    <TextView
+        android:id="@+id/txtTagLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="73dp"
+        android:layout_centerHorizontal="true"
+        android:text="Developed by D Tech,Bengaluru"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
